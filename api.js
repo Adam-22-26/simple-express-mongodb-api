@@ -2,10 +2,7 @@ const express = require("express")
 const controller = require("./controller")
 
 const apiRouter = express.Router()
-app.get("/", (req, res)=>{
-    res.status(200)
-    res.send({data: "hello world"})
-})
+
 apiRouter.route("/api/get-users")
 .get(controller.user_ctlr)
 
